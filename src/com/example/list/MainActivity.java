@@ -30,22 +30,40 @@ public class MainActivity extends Activity {
 	private BaseAdapter adapter;
 	
 	private Spinner spinner;
+    private int flag_sort = 0;
 	
 	private ArrayList<Student> students;
 
 	@SuppressLint("NewApi")
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
 		list = (AbsListView)findViewById(R.id.list);
-		
-		students = Generator.generate();
+
+        //check if orientation has been changed
+        if (getLastNonConfigurationInstance() != null) students = (ArrayList<Student>) getLastNonConfigurationInstance();
+		else students = Generator.generate();
 		
 		adapter = new StudentAdapter(students, getApplicationContext());
 		
 		list.setAdapter(adapter);
+
+        /*if (savedInstanceState != null) {
+            flag_sort = savedInstanceState.getInt("sort");
+            switch (flag_sort){
+                case 0:
+                    Collections.sort(students, new DateSortName());
+                    break;
+                case 1:
+                    Collections.sort(students, new DateSortAge());
+                    break;
+            }
+        }*/
+
+        if (flag_sort == 1)  Collections.sort(students, new DateSortName());
+        if (flag_sort == 2) Collections.sort(students, new DateSortAge());
 		
 		list.setOnItemClickListener(new OnItemClickListener() {
 
@@ -89,17 +107,18 @@ public class MainActivity extends Activity {
 				
 				case 0: 
 					Collections.sort(students, new DateSortName());
+                    flag_sort = position;
 				break;
 				case 1:
 					Collections.sort(students, new DateSortAge());
-					break;
+                    flag_sort = position;
+				break;
 				default:
 					break;	
 					
 				}
 				
-				
-						
+
 				adapter.notifyDataSetChanged();
 				
 				adapter.notifyDataSetInvalidated();
@@ -117,6 +136,17 @@ public class MainActivity extends Activity {
 		
 	}
 
-	
+   /* protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("sort", flag_sort);
+    }
+
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        flag_sort = savedInstanceState.getInt("sort");
+    }*/
+   public Object onRetainNonConfigurationInstance() {
+       return students;
+   }
 
 }
