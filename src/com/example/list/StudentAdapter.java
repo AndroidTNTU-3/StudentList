@@ -49,7 +49,6 @@ public class StudentAdapter extends BaseAdapter {
 			
 			
 			TextView text = (TextView) convertView.findViewById(R.id.text_item);
-			
 			ImageView image = (ImageView) convertView.findViewById(R.id.image_item);
 			
 			ViewHolder vh = new ViewHolder(text, image);
