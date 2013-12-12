@@ -82,7 +82,7 @@ Sort by Age
                 </string>
                 <string name="title_activity_detail" >DetailActivity
                 </string>
-                <string name="app_name" >list
+                <string name="app_name" >StudentList
                 </string>
                 <string name="hello_world" >Hello world!
                 </string>
@@ -137,6 +137,26 @@ Sort by Age
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
+            <file
+                name="ic_student"
+                path="C:\Users\Alex\AndroidStudioProjects\StudentList\res\drawable-xxhdpi\ic_student.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ic_student"
+                path="C:\Users\Alex\AndroidStudioProjects\StudentList\res\drawable-hdpi\ic_student.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_student"
+                path="C:\Users\Alex\AndroidStudioProjects\StudentList\res\drawable-mdpi\ic_student.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_student"
+                path="C:\Users\Alex\AndroidStudioProjects\StudentList\res\drawable-xhdpi\ic_student.png"
+                qualifiers="xhdpi"
+                type="drawable" />
         </source>
         <source path="C:\Users\Alex\AndroidStudioProjects\StudentList\build\res\rs\debug" />
     </dataSet>

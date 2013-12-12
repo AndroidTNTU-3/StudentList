@@ -1,10 +1,10 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1386326703567 1864 354167f03eb42d2ec9d1f367c61d74f0ff91464f C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\StudentAdapter.java
-1386314486631 1163 8720b7dfc160aca04500d4fa3bd899d05a676029 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\DetailActivity.java
+1386684657093 1863 951fb65670193c704f977675b8a1a25d6ff91d26 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\StudentAdapter.java
+1386684259842 1377 c17a322c43b3148d1be68c1dfea2c422b2ec0ea9 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\DetailActivity.java
 1386314486632 646 746ac45d6966a7d1aaaade086aa8d9458ff4ffe9 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\Generator.java
 1386332425455 260 4322ee621b7c6890741f4521f8ec3ae35aa261a5 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\DateSortAge.java
 1386314486646 410 3d68764ac10a1aac580704fb1bc44bcee9bc96ec C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\Student.java
 1386332057421 280 380c558a87646a837dce3d0439e538b04a923f64 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\DateSortName.java
-1386594943845 4302 ad5ac9ec96ea6531946d545c090939979ee835cb C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\MainActivity.java
+1386596316068 4351 39a79e37e163d8cfea21bf2d0901833d44f610f4 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\MainActivity.java

@@ -62,7 +62,7 @@ public class StudentAdapter extends BaseAdapter {
 		ViewHolder vh = (ViewHolder) convertView.getTag();
 		
 		vh.text.setText(data.get(position).toString());
-		vh.image.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_launcher));
+		vh.image.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_student));
 		
 		
 

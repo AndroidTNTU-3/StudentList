@@ -3,6 +3,7 @@ package com.example.list;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ public class DetailActivity extends Activity {
 		TextView firstNameView = (TextView) findViewById(R.id.detail_first_name);
 		TextView lastNameView = (TextView) findViewById(R.id.detail_last_name);
 		TextView dobView = (TextView) findViewById(R.id.detail_dob);
+        ImageView image = (ImageView) findViewById(R.id.detail_image);
 		
 		Intent startIntent = getIntent();
 		
@@ -25,6 +27,7 @@ public class DetailActivity extends Activity {
 		
 		firstNameView.setText(first);
 		lastNameView.setText(last);
+        image.setImageDrawable(getApplicationContext().getResources().getDrawable(R.drawable.ic_student));
 		
 		if (dob != -1){
 			dobView.setText(dob+"");
