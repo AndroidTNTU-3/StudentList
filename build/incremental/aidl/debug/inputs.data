@@ -1,10 +1,10 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1386842078215 1858 d031ad26d1d96ef282e4b50be2926dded86719c8 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\StudentAdapter.java
-1386684259842 1377 c17a322c43b3148d1be68c1dfea2c422b2ec0ea9 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\DetailActivity.java
-1386314486632 646 746ac45d6966a7d1aaaade086aa8d9458ff4ffe9 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\Generator.java
-1386332425455 260 4322ee621b7c6890741f4521f8ec3ae35aa261a5 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\DateSortAge.java
-1386842276753 430 1edd77a5016bef2901369f38b6feeea16ea5a7c9 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\Student.java
-1386332057421 280 380c558a87646a837dce3d0439e538b04a923f64 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\DateSortName.java
-1386596316068 4351 39a79e37e163d8cfea21bf2d0901833d44f610f4 C:\Users\Alex\AndroidStudioProjects\StudentList\src\com\example\list\MainActivity.java
+1386852512671 1775 46254acf7b74eab8089a8313ed96e96f392115e0 C:\Users\alex\AndroidStudioProjects\StudentList\src\com\example\list\StudentAdapter.java
+1386852512655 1330 4b700f5019afc3f09a4c9811a9aeb521310a7394 C:\Users\alex\AndroidStudioProjects\StudentList\src\com\example\list\DetailActivity.java
+1386852512671 621 599426fda1b303ca497356d7c52e4dd0e6781ffb C:\Users\alex\AndroidStudioProjects\StudentList\src\com\example\list\Generator.java
+1386852512655 247 b41850a9846a77769660557cf19c31c02efe0f7b C:\Users\alex\AndroidStudioProjects\StudentList\src\com\example\list\DateSortAge.java
+1386862938147 1258 5c082c0c9846e4e0758c7a42188559479180f770 C:\Users\alex\AndroidStudioProjects\StudentList\src\com\example\list\Student.java
+1386852512655 267 a2483016118e60d0c5a6ff99db0c275a1e4df9d5 C:\Users\alex\AndroidStudioProjects\StudentList\src\com\example\list\DateSortName.java
+1386863360670 4850 dfeecd50cac6a5ab028670c8fcad253951c07360 C:\Users\alex\AndroidStudioProjects\StudentList\src\com\example\list\MainActivity.java

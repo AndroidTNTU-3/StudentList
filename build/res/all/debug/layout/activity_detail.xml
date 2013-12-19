@@ -51,4 +51,4 @@
         android:layout_below="@id/detail_last_name"
           android:layout_centerHorizontal="true"/>
 
-</RelativeLayout><!-- From: file:/C:/Users/Alex/AndroidStudioProjects/StudentList/res/layout/activity_detail.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/alex/AndroidStudioProjects/StudentList/res/layout/activity_detail.xml -->

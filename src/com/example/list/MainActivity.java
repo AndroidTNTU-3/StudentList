@@ -15,6 +15,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
@@ -41,14 +43,17 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		list = (AbsListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
+        list.setSaveEnabled(false);
 
         //check if orientation has been changed
-        if (getLastNonConfigurationInstance() != null) students = (ArrayList<Student>) getLastNonConfigurationInstance();
+        if (savedInstanceState != null) {
+            //students = (ArrayList<Student>) getLastNonConfigurationInstance();
+            students = savedInstanceState.getParcelableArrayList("arrayOfStudents");
+        }
 		else students = Generator.generate();
 		
 		adapter = new StudentAdapter(students, getApplicationContext());
-		
-		list.setAdapter(adapter);
 
         /*if (savedInstanceState != null) {
             flag_sort = savedInstanceState.getInt("sort");
@@ -61,7 +66,16 @@ public class MainActivity extends Activity {
                     break;
             }
         }*/
+        if(list instanceof ListView){
+            ListView lv = (ListView) list;
+            lv.setAdapter(adapter);
+        }
+        else if(list instanceof GridView){
+            GridView gv = (GridView) list;
+            gv.setAdapter(adapter);
+        }
 
+        else list.setAdapter(adapter);
         if (flag_sort == 1)  Collections.sort(students, new DateSortName());
         if (flag_sort == 2) Collections.sort(students, new DateSortAge());
 		
@@ -136,17 +150,19 @@ public class MainActivity extends Activity {
 		
 	}
 
-   /* protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("sort", flag_sort);
+        //outState.putInt("sort", flag_sort);
+        outState.putParcelableArrayList("arrayOfStudents", students);
     }
 
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        flag_sort = savedInstanceState.getInt("sort");
-    }*/
-   public Object onRetainNonConfigurationInstance() {
+       students = savedInstanceState.getParcelableArrayList("arrayOfStudents");
+        //flag_sort = savedInstanceState.getInt("sort");
+    }
+   /*public Object onRetainNonConfigurationInstance() {
        return students;
-   }
+   }*/
 
 }
